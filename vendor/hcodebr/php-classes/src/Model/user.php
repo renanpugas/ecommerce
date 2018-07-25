@@ -55,8 +55,8 @@ class User extends Model {
 			(bool)$_SESSION[User::SESSION]["inadmin"] !== $inadmin
 			) {
 
-				//header("Location: ../ecommerce/admin/login");
-				echo json_encode($_SESSION[User::SESSION]);
+				header("Location: ../ecommerce/admin/login");
+				//echo json_encode($_SESSION[User::SESSION]);
 				exit;
 
 			}
