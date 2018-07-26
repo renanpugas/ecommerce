@@ -38,8 +38,11 @@ class Page {
 	private function setData($data = array()) {
 
 		foreach ($data as $key => $value) {
-			$this->tpl->assig($key, $value);
+			$this->tpl->assign($key, $value);
 		}
+
+		$this->tpl->assign("nome", "oi");
+
 
 	}
 
